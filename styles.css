@@ -42,6 +42,10 @@
 
 /*MAIN*****************************************************************************************************************************************/
 /*BSAS*/
+#bsas{
+    background-color: #030213;
+}
+
 .card-img-overlay{
     background-color: #03021367;
     font-size: 1.5em;
@@ -82,7 +86,8 @@ footer{
     background: linear-gradient(90deg, #030213 0%, rgb(12, 63, 92) 100%);
     align-items: center;
     text-align: center;
-    height: 5rem;
+    padding-bottom: 0%;
+    height: 6rem;
 }
 footer .btn{
     color: #ffffff;
@@ -172,5 +177,11 @@ footer .btn{
 
     .btn{
         font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width: 581px){
+    #seccion{
+        margin: 10%;
     }
 }
