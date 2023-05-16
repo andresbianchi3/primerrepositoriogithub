@@ -1,4 +1,11 @@
+/*poner el footer abajo siempre*/
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 /*HEADER***************************************************************************************************************************************/
+
 .navbar{
     padding: 0%;
 }
@@ -42,6 +49,10 @@
 
 /*MAIN*****************************************************************************************************************************************/
 /*BSAS*/
+#bsas{
+    background-color: #030213;
+}
+
 .card-img-overlay{
     background-color: #03021367;
     font-size: 1.5em;
@@ -74,7 +85,8 @@ h1{
 
 /*FOOTER***************************************************************************************************************************************/
 footer{
-    margin-top: 1em;
+    /*le pongo esto asi se queda abajo siempre con la ayuda del bosy y flexbox*/
+    margin-top: auto;
 }
 
 #footer{
@@ -82,7 +94,10 @@ footer{
     background: linear-gradient(90deg, #030213 0%, rgb(12, 63, 92) 100%);
     align-items: center;
     text-align: center;
-    height: 5rem;
+    padding-bottom: 0%;
+    height: auto;
+    min-height: 6em;
+    margin-top: 2em;
 }
 footer .btn{
     color: #ffffff;
@@ -173,4 +188,35 @@ footer .btn{
     .btn{
         font-size: 0.8em;
     }
+}
+
+@media screen and (min-width: 581px){
+    #seccion{
+        margin: 10%;
+    }
+}
+
+
+/*pagina tikets nueva*/
+main{
+    padding: 1em;
+}
+
+#totalapagar{
+    background-color: #CCE5FF;
+    padding: 1em;
+    
+}
+
+#btn-borrar{
+    background: #97C93E;
+    color: white;
+    width: 100%;
+}
+
+#btn-resumen{
+    background: #97C93E;
+    color: white;
+    width: 100%;
+    
 }
