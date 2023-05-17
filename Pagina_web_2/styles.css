@@ -1,0 +1,228 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+/*poner el footer abajo siempre*/
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*HEADER***************************************************************************************************************************************/
+
+.navbar{
+    padding: 0%;
+}
+
+#logo{
+    width: 7em;
+}
+
+#container-fluid{
+    background-color: #353A40;
+}
+
+.navbar-brand{
+    color: white;
+    font-size: 22px;
+    width: 13em;
+    height: 4em;
+    align-items: center;
+    padding: 1px;
+}
+
+#conferencia{
+    color: white;
+}
+
+.nav-link{
+    font-size: 18px;
+    color: rgb(175, 175, 175);
+}
+
+#comprar{
+    color: #2AA845;
+}
+
+.navbar-toggler{
+    background-color: #FEC900;
+}
+
+/*FIN HEADER***********************************************************************************************************************************/
+
+
+/*MAIN*****************************************************************************************************************************************/
+main{
+    padding: 1em;
+}
+/*BSAS*/
+#bsas{
+    background-color: #030213;
+}
+
+.card-img-overlay{
+    background-color: #03021367;
+    font-size: 1.5em;
+    align-items: center;
+    display: flexbox;
+    justify-content: right;
+    padding-top: 15%;
+    padding-left: 50%;
+    padding-right: 5%;
+}
+h1{
+    font-size: 2em;
+}
+.btn{
+    font-size: 1em;
+}
+
+/*CARDS****************************************************************************************************************************************/
+.titulo-cards{
+    margin-top: 1em;
+    align-items: center;
+    text-align: center;
+}
+
+/*BS AS - OCTUBRE******************************************************************************************************************************/
+#BsAs-Ocutubre{
+    background-color: #353A40;
+    font-size: 1.1em;
+}
+
+/*FOOTER***************************************************************************************************************************************/
+footer{
+    /*le pongo esto asi se queda abajo siempre con la ayuda del bosy y flexbox*/
+    margin-top: auto;
+}
+
+#footer{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, #030213 0%, rgb(12, 63, 92) 100%);
+    align-items: center;
+    text-align: center;
+    height: 5rem;
+    min-height: 6em;
+    margin-top: 2em;
+}
+footer .btn{
+    color: #ffffff;
+
+}
+
+@media screen and (max-width: 1080px) {
+    .card-img-overlay{
+        padding-left: 10%;
+        padding-right: 5%;
+        font-size: 1.2em;
+    }
+}
+
+@media screen and (max-width: 672px) {
+    .card-img-overlay{
+        text-align: center;
+        padding-top: 1%;
+        padding-left: 10%;
+        padding-right: 5%;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .card-img-overlay{
+        text-align: center;
+        padding-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+        font-size: 0.8em;
+    }
+    .btn{
+        font-size: 0.8em;
+    }
+    
+}
+
+@media screen and (max-width: 1053px) {
+    .card-text{
+        font-size: 0.8em;
+   }
+
+   #botonconocemas{
+    font-size: small;
+   }
+}
+@media screen and (max-width: 872px) {
+    .card-text{
+        font-size: 0.6em;
+   }
+
+   #botonconocemas{
+    font-size: small;
+   }
+}
+
+@media screen and (max-width: 767px) {
+    .card-text{
+        font-size: 1em;
+   }
+
+   #botonconocemas{
+    font-size:medium;
+   }
+}
+
+@media screen and (max-width: 406px) {
+    .navbar-brand{
+        font-size: small;
+    }
+
+    .navbar-toggler{
+        font-size: small;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .card-text{
+        font-size: 0.9em;
+    }
+
+    .card-title{
+        font-size: 1em;
+    }
+
+    .btn{
+        font-size: 0.8em;
+    }
+}
+/*CUADRADOS*/
+#cuadrado{
+    min-height: 14em;
+}
+h5{
+    font-weight: 100;
+    font-size: medium ;
+}
+
+
+
+
+/*BOTONES VERDES*/
+#totalapagar{
+    background: #CCE5FF;
+    min-height: 4em;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#btn-resumen{
+    background: #97C93E;
+    color: white;
+    width: 100%;
+    font-size: large;
+}
+#btn-borrar{
+    background: #97C93E;
+    color: white;
+    width: 100%;
+    font-size:large;
+}
