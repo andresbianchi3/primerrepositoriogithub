@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="./styles.css" />
     <!--FAVICON-->
     <link rel="icon" type="image/x-icon" href="./imagenes/codoacodo.png" />
+	<!--FUENTES GOOGLE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -43,17 +45,18 @@
 									<li class="nav-item"><a class="nav-link" href="#oradores">Los oradores</a></li>
 									<li class="nav-item"><a class="nav-link" href="#lugaryfecha">El lugar y la fecha</a></li>
 									<li class="nav-item"><a class="nav-link" href="#conviertete">Conviértete en orador</a></li>
-									<li class="nav-item"><a id="comprar" class="nav-link " href="#">Comprar tickets</a></li>
+									<li class="nav-item"><a id="comprar" class="nav-link " href="/tickets.html">Comprar tickets</a></li>
 								</ul>
-						  </div>
+						    </div>
+                        </div>
 					</div>
 				</nav>
 			</div>
 		</nav>
 	</header>
 
-	<main>
-		<section id="bsas">
+	
+		<section>
 			<div class="card text-bg-dark text-end">
 				<img id="img" src="./imagenes/ba1.jpg" alt="ba1">
 				<div class="card-img-overlay">
@@ -63,13 +66,14 @@
 					está creando el futuro de Internet. Ven a conocer a miembros del 
 					evento, a otros estudiantes de Codo a Codo y los oradores de primer 
 					nivel que tenemos para ti. Te esperamos!</p>
-					<a href="#conviertete"><button type="button" class="btn btn-outline-light">Quiero ser orador</button></a>
-					<button type="button" class="btn btn-success">Comprar tickets</button>
+					<button type="button" onclick="window.location.href='#conviertete'" class="btn btn-outline-light">Quiero ser orador</button>
+					<button type="button" class="btn btn-success" onclick="window.location.href='./tickets.html'">Comprar tickets</button>
+
 				</div>
 			</div>
 		</section>
 		
-
+	<main>
 		<!--CARDS DE PRESENTADORES-->
 		<section id="oradores">
 			<div class="titulo-cards">
@@ -77,8 +81,8 @@
 				<H2>ORADORES</H2>
 			</div>
 			
-			<div class="row row-cols-md-4 justify-content-center">
-				<div class="col">
+			<div class="row  row-cols-md-4 justify-content-center">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 				  	<div class="card">
 						<img src="./imagenes/steve.jpg" class="card-img-top" alt="steve">
 						<div class="card-body">
@@ -89,7 +93,7 @@
 						</div>
 				  	</div>
 				</div>
-				<div class="col">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 					<div class="card">
 						<img src="./imagenes/bill.jpg" class="card-img-top" alt="bill">
 						<div class="card-body">
@@ -101,7 +105,7 @@
 				 	 </div>
 				</div>
 
-				<div class="col">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
 				  	<div class="card">
 						<img src="./imagenes/ada.jpeg" class="card-img-top" alt="ada">
 						<div class="card-body">
@@ -159,6 +163,7 @@
 			</div>
 		</section>		
 	</main>
+
 
 	<footer>
 		<div class="row" id="footer">

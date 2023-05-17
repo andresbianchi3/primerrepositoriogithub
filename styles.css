@@ -1,4 +1,14 @@
+html{
+    font-family: 'Poppins', sans-serif;
+}
+/*poner el footer abajo siempre*/
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
 /*HEADER***************************************************************************************************************************************/
+
 .navbar{
     padding: 0%;
 }
@@ -41,6 +51,9 @@
 
 
 /*MAIN*****************************************************************************************************************************************/
+main{
+    padding: 1em;
+}
 /*BSAS*/
 #bsas{
     background-color: #030213;
@@ -78,7 +91,8 @@ h1{
 
 /*FOOTER***************************************************************************************************************************************/
 footer{
-    margin-top: 1em;
+    /*le pongo esto asi se queda abajo siempre con la ayuda del bosy y flexbox*/
+    margin-top: auto;
 }
 
 #footer{
@@ -86,8 +100,9 @@ footer{
     background: linear-gradient(90deg, #030213 0%, rgb(12, 63, 92) 100%);
     align-items: center;
     text-align: center;
-    padding-bottom: 0%;
-    height: 6rem;
+    height: 5rem;
+    min-height: 6em;
+    margin-top: 2em;
 }
 footer .btn{
     color: #ffffff;
@@ -179,9 +194,35 @@ footer .btn{
         font-size: 0.8em;
     }
 }
+/*CUADRADOS*/
+#cuadrado{
+    min-height: 14em;
+}
+h5{
+    font-weight: 100;
+    font-size: medium ;
+}
 
-@media screen and (min-width: 581px){
-    #seccion{
-        margin: 10%;
-    }
+
+
+
+/*BOTONES VERDES*/
+#totalapagar{
+    background: #CCE5FF;
+    min-height: 4em;
+    padding-top: 1em;
+    padding-left: 1em;
+}
+
+#btn-resumen{
+    background: #97C93E;
+    color: white;
+    width: 100%;
+    font-size: large;
+}
+#btn-borrar{
+    background: #97C93E;
+    color: white;
+    width: 100%;
+    font-size:large;
 }
