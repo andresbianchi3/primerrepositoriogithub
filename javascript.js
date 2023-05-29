@@ -9,13 +9,18 @@ btnResumen.addEventListener('click', function() {
     let precio = 0;
     // Obtener el valor seleccionado en el campo de selección
     var opcionSeleccionada = select.value;
+    // Obtener la cantidad de entradas
+    var cantidad = document.getElementById('inputCity').value;
+    
 
-    if (opcionSeleccionada == 'Estudiante') {
-        precio = 200-((80/100)*200);
-    }else if (opcionSeleccionada == 'Trainee') {
-        precio = 200-((50/100)*200);
-    }else if(opcionSeleccionada == 'Junior'){
-        precio = 200-((15/100)*200);
+    if (opcionSeleccionada == 'Estudiante' && cantidad >= 1) {
+        precio = (200*cantidad)-((80/100)*(200*cantidad));
+    }else if (opcionSeleccionada == 'Trainee' && cantidad >= 1) {
+        precio = (200*cantidad)-((50/100)*(200*cantidad));
+    }else if(opcionSeleccionada == 'Junior' && cantidad >= 1){
+        precio = (200*cantidad)-((15/100)*(200*cantidad));
+    }else{
+        precio = ' Seleccione cantidad de entradas';
     }
 
     // Actualizar el contenido del elemento <p> según la opción seleccionada
